@@ -1,0 +1,43 @@
+Jenkins installations steps
+--------------------------------------
+In AWS  EC2 instance
+------------------------
+. install / ensure java available
+------------------------------------------
+	java -version           				: check for java version, if not available
+	sudo apt-get update
+	sudo apt-get install openjdk-8-jdk -y
+	
+.install jenkins
+--------------------
+	wget -q -O - https://pkg.jenkins.io/debian-stable/jenkins.io.key | sudo apt-key add -
+
+	add this below line in the file      , open thefile     sudo   vi  /etc/apt/sources.list
+
+       	        			 deb https://pkg.jenkins.io/debian-stable binary/
+
+	create a file jenkins.list in  /etc/apt/sources.list.d               use the below command
+
+	       		  sudo touch  /etc/apt/sources.list.d/jenkins.list
+
+			 sudo apt-get update
+	install jenkins
+	       		  sudo apt-get install jenkins
+	         
+
+	start the jenkins
+	         sudo systemctl start jenkins
+
+	always enable jenkins for next time login also...
+	          sudo systemctl enable jenkins
+
+	check the status of jenkin is running or not
+	          sudo systemctl status jenkins
+===================================================
+open the browser and type
+	publicip:8080
+
+	the intial admin password is available in  /var/lib/jenkins/secrets/initialAdminPassword
+
+	intall the default plugins
+===============================================
