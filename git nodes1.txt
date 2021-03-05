@@ -1,0 +1,23 @@
+git  init  ---------------- initiaze  the git local rep,,, in the current folder
+        now we can run git commands....... like add, commit, revert, push to github....etc
+
+ git config --global user.name "venkatg"
+ git config --global user.email "venkatgn.gutta@gmail.com"
+
+	to config the user details  
+===========================
+git add  filename    ---------- add file into staging
+	git add file1.txt  file2.txt file3.txt         add 3 files
+	git add *.java            will add all .java programs 
+git commit -m "message" ---------- commit all the files in the staging into local git rep.
+======================
+git commit -a -m "message"  -------- add and commit the existing file with new updates.
+
+git status  ------------ display the untracked files / changes to commit files...etc
+
+git log ------------dispaly the detailed log information
+git log --oneline ----------display one line log info (headno   commitmessage)
+git ls-files ----------display the files in the git rep.
+ls -l ----------------display files in working directory
+=============================================
+

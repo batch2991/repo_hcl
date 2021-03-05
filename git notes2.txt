@@ -1,0 +1,24 @@
+git reset filename  --------- to remove the file from staging. before commit
+			NOTE: after commit there is no anyfiles in staging.
+
+git rm filename  --------- remove the file in both local rep, working dir
+git rm --cached filename  --- remove the file only in local rep.
+
+NOTE :   any updated like add file, updates, delete...etc in local repository should be
+		commited.
+========================
+rm filename---------- will remove file only in working dir ( itis linuxcommand)
+=========================
+git revert headno  ------ will revert back to old version
+		now a new headno is created.
+
+git revert newheadno --- will get back the reverted files.
+		(revert the revert)
+
+git reset --hard headno  ---- will permenantly remove all changes
+		in local, working dir and reference will point
+		to the given headno.
+
+NOTE :  diff between revert & reset  :   when revert  we can get back by revert again.
+			             when reset hard,,, we cannot get back.
+=======================================================

@@ -1,0 +1,54 @@
+git diff filename -------- show the diff of file  between  working dir, staging
+git diff --cached filename ---- show the diff of file bwt  staging, local rep
+==============
+
+git stash ---------------- all new changes in working dir will be moved to temp location.
+            now "git status"   will be clean
+
+git stash list ----------- display the stashnumber and changes 
+
+git stash show  stashno ----------display the detailed files,changes moved to stash
+
+git stash pop stashno ------------ will get back the updates from temp location
+				to working dir
+
+	now "git status"  changes not staged to commit..
+============================
+branches
+--------------
+	branches are used in parallel developments like multiple teams in the project can work on different branch and merge the code between branches later.
+
+	by default all the files comitted will be in master branch.
+
+	any updates can be done into the required branch we need and can differentiate the files
+	between branches.
+
+	git checkout -b newbranchname  master -------- to create a new branch from master
+	git checkout -b b1 master ----------- creates a new "b1" branch from master
+				and also check the focus to b1 branch
+
+	git branch-------------- list all the branches available
+	git checkout branchname ------------- to switch to the required branchname
+	
+	ex:
+		git checkout b1 ------------- now focus is in b1 branch
+
+		support if any files are created and committed will be in   b1 branch
+
+		if we see the
+			git log --oneline  b1
+			git log --oneline master
+
+			we can observe the differences
+
+		
+				
+	git merge srcbranch  destbranch ------- to merge
+	ex: git merge b1 master  -------------- will add the files into master from b1
+				so master has  b1 branch files also.
+
+===============================================
+	
+
+
+
