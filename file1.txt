@@ -1,2 +1,3 @@
 this is samplefile
 this is updated content
+newline added
